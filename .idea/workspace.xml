@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6dd760a4-7dab-4918-a24c-acf0db465d8d" name="Changes" comment="chore: add update student usecase">
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__SkillsMigration.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/test/java/br/com/itau/user/update/UpdateUserUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/br/com/itau/user/update/UpdateUserUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/br/com/itau/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/br/com/itau/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/api/Controllers/GroupController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/api/GroupAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/configuration/ObjectMapperConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/configuration/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/configuration/WebServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/configuration/json/Json.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/configuration/usecases/UserUseCaseConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/GroupPostgreSQLGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/models/CreateGroupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/models/GroupListResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/persistence/GroupJpaEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/persistence/GroupRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/group/presenter/GroupApiPresenter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/utils/SpecificationUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/io/aerodata/core/infrastructure/utils/SqlUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application-test-integration.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application-test-integration.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__GroupsMigration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/ControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/PostgreSQLCleanUpExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/PostgreSQLGatewayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/group/GroupPostgreSQLGatewayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/io/aerodata/core/infrastructure/group/api/GroupApiTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/domain">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/infrastructure">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="flyway" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="itauVeiculos" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Record" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2MataKhGFNxN9bXkb0YVqSkDfyH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Projetos/Itaú/core/infrastructure",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "1d862dc8cd42f5ed80736baf7a9fd5b4",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projetos\Itaú\core\infrastructure" />
+      <recent name="C:\Projetos\Itaú\core" />
+      <recent name="C:\Projetos\Itaú\core\infrastructure\src\main\resources\db\migration" />
+      <recent name="C:\Projetos\Aerodata\core\infrastructure\src\main\resources" />
+      <recent name="C:\Projetos\Aerodata\core\domain\src\test\java\io\aerodata\core\domain\student" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projetos\Itaú\core\infrastructure" />
+      <recent name="C:\Projetos\Aerodata\core" />
+      <recent name="C:\Projetos\Aerodata\core\infrastructure" />
+      <recent name="C:\Projetos\Aerodata\core\infrastructure\src\test\java\io\aerodata\core\infrastructure" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="io.aerodata.core.infrastructure.group" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.aerodata.core.domain.student" />
+      <recent name="io.aerodata.core.domain.flightInstructor" />
+      <recent name="io.aerodata.core.domain.employee" />
+      <recent name="io.aerodata.core.domain.personalDocuments" />
+      <recent name="io.aerodata.core.domain.group" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="core [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="core [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="core [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="core [flywayMigrate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="flywayMigrate" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="core:infrastructure [flywayMigrate]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="&quot;FLYWAY_DB&quot;" value="&quot;jdbc:postgresql://ec2-18-224-23-118.us-east-2.compute.amazonaws.com:5434/dumont_test&quot;" />
+            <entry key="&quot;FLYWAY_PASSWORD&quot;" value="&quot;e1BoUt8Jf6zt&quot;" />
+            <entry key="&quot;FLYWAY_USER&quot;" value="&quot;test&quot;" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/infrastructure" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="flywayMigrate" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="veiculos.infrastructure.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.aerodata.core.infrastructure.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="itauVeiculos.infrastructure.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.aerodata.core.infrastructure.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="itauVeiculos.infrastructure.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.itau.infrastructure.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="aerodata.infrastructure.main" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.aerodata.core.infrastructure.Main" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Gradle.core:infrastructure [flywayMigrate]" />
+      <item itemvalue="Gradle.core [bootJar]" />
+      <item itemvalue="Gradle.core [bootRun]" />
+      <item itemvalue="Gradle.core [clean]" />
+      <item itemvalue="Gradle.core [flywayMigrate]" />
+      <item itemvalue="Spring Boot.Main (3)" />
+      <item itemvalue="Spring Boot.Main (1)" />
+      <item itemvalue="Spring Boot.Main (2)" />
+      <item itemvalue="Spring Boot.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Gradle.core [bootJar]" />
+        <item itemvalue="Gradle.core [clean]" />
+        <item itemvalue="Gradle.core [bootRun]" />
+        <item itemvalue="Gradle.core [flywayMigrate]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dd760a4-7dab-4918-a24c-acf0db465d8d" name="Changes" comment="" />
+      <created>1678017583332</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678017583332</updated>
+      <workItem from="1678017586351" duration="24273000" />
+      <workItem from="1678099594249" duration="10397000" />
+      <workItem from="1678119128294" duration="5182000" />
+      <workItem from="1678357273265" duration="21849000" />
+      <workItem from="1678409234298" duration="5314000" />
+      <workItem from="1678442206399" duration="6886000" />
+      <workItem from="1678488714934" duration="4096000" />
+      <workItem from="1678535316304" duration="12650000" />
+      <workItem from="1678555301246" duration="17731000" />
+      <workItem from="1678576538298" duration="2770000" />
+      <workItem from="1678613889486" duration="5731000" />
+      <workItem from="1678787930266" duration="4903000" />
+      <workItem from="1678803158494" duration="4847000" />
+      <workItem from="1678874795927" duration="1157000" />
+      <workItem from="1678956779126" duration="6570000" />
+      <workItem from="1678966360517" duration="7976000" />
+      <workItem from="1678978990603" duration="287000" />
+      <workItem from="1678979290453" duration="7659000" />
+      <workItem from="1678998956250" duration="3880000" />
+      <workItem from="1679010083457" duration="879000" />
+      <workItem from="1679048799404" duration="250000" />
+      <workItem from="1679049089161" duration="5260000" />
+      <workItem from="1679061682662" duration="1590000" />
+      <workItem from="1679689095081" duration="761000" />
+      <workItem from="1680041198789" duration="1446000" />
+      <workItem from="1681247136458" duration="1389000" />
+      <workItem from="1682966107395" duration="50000" />
+      <workItem from="1683319445118" duration="5825000" />
+      <workItem from="1683389223353" duration="5358000" />
+      <workItem from="1683463652292" duration="23645000" />
+      <workItem from="1683549519436" duration="26412000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore: add update student usecase">
+      <created>1678104028410</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678104028410</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: add update student usecase">
+      <created>1678105692243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678105692243</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: add update student usecase">
+      <created>1678123118423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678123118423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-dynamodb" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: add update student usecase" />
+    <MESSAGE value="chore: add sqs working" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: add sqs working" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/src/test/java/io/aerodata/core/application/student/create/CreateStudentUseCaseTest.java</url>
+          <line>203</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/aerodata$UpdateStudentUseCaseTest_givenAValidCommand_whenCallsUpdateStudent_shouldReturnStudentId.ic" NAME="UpdateStudentUseCaseTest.givenAValidCommand_whenCallsUpdateStudent_shouldReturnStudentId Coverage Results" MODIFIED="1678103725598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/aerodata$aerodata__test_.ic" NAME="aerodata [test] Coverage Results" MODIFIED="1678106074264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/aerodata$CreateStudenteUseCaseTest.ic" NAME="CreateStudenteUseCaseTest Coverage Results" MODIFIED="1678101217823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

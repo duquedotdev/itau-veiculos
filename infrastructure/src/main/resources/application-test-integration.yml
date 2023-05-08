@@ -1,0 +1,7 @@
+spring:
+  autoconfigure:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: test
+    password: e1BoUt8Jf6zt
+    url: jdbc:postgresql://ec2-18-224-23-118.us-east-2.compute.amazonaws.com:5434/itau

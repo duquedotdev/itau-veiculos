@@ -1,0 +1,11 @@
+postgres:
+  url: ec2-18-224-23-118.us-east-2.compute.amazonaws.com:5434
+  username: test
+  password: e1BoUt8Jf6zt
+
+server:
+  port: 8080
+  undertow:
+    threads:
+      worker: 64 
+      io: 4 

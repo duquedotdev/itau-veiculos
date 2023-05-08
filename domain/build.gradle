@@ -1,0 +1,36 @@
+plugins {
+  id 'java-conventions'
+  id 'java-library'
+}
+
+group 'br.com.itau'
+
+compileJava.options.encoding = 'UTF-8'
+
+configurations {
+  testClases {
+    extendsFrom(testImplementation)
+  }
+}
+
+apply plugin: 'java'
+tasks.withType(JavaCompile) {
+  options.encoding = 'UTF-8'
+}
+
+task teskJar(type: Jar) {
+  archiveClassifier.set('test')
+  from sourceSets.test.output
+}
+
+artifacts {
+  testClases teskJar
+}
+
+repositories {
+  mavenCentral()
+}
+
+test {
+  systemProperty "file.encoding", "utf-8"
+}

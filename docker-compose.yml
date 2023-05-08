@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: itau
+    #    build: .
+    image: itau/core:main-6
+    profiles: [ "app" ]
+    restart: unless-stopped
+    env_file:
+      - infrastructure/.env
+    ports:
+      - 8080:8080
+    depends_on:
+      - postgres
+    networks:
+      - itau_network
+        
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aerodata
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    networks:
+      - itau_network    
+
+networks:
+  itau_network:

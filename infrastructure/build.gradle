@@ -1,0 +1,79 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'org.flywaydb:flyway-core:9.8.1'
+  }
+}
+
+plugins {
+  id 'java-conventions'
+  id 'jacoco-report-aggregation'
+  id 'application'
+  id 'org.springframework.boot' version '2.7.9'
+  id 'io.spring.dependency-management' version '1.1.0'
+  id 'org.flywaydb.flyway' version '8.4.3'
+}
+
+group 'io.aerodata.core.infrastructure'
+
+bootJar {
+  archiveName 'application.jar'
+  destinationDirectory.set(file "${rootProject.buildDir}/libs")
+}
+
+
+
+dependencies {
+  implementation(project(":domain"))
+  implementation(project(":application"))
+  implementation('org.springframework.boot:spring-boot-starter-web:2.7.9') {
+    exclude module: 'spring-boot-starter-tomcat'
+  }
+
+  implementation('org.springdoc:springdoc-openapi-webmvc-core:1.6.14')
+  implementation('org.springdoc:springdoc-openapi-ui:1.6.14')
+  
+//  implementation('org.springframework.boot:spring-boot-starter-security:2.7.9')
+//  implementation('org.springframework.boot:spring-boot-starter-oauth2-resource-server:2.7.9')
+
+  implementation('org.springframework.boot:spring-boot-starter-undertow:2.7.9')
+  implementation('org.postgresql:postgresql:42.5.4')
+  implementation('javax.persistence:javax.persistence-api:2.2')
+  
+  implementation('org.springframework.boot:spring-boot-starter-data-jpa:2.7.9')
+  testImplementation('org.springframework.boot:spring-boot-starter-test')
+  
+  implementation('com.nimbusds:nimbus-jose-jwt:9.31')
+
+  implementation('com.fasterxml.jackson.module:jackson-module-afterburner')
+
+  implementation('com.h2database:h2')
+//  testImplementation('org.springframework.security:spring-security-test:6.0.2')
+
+}
+
+flyway {
+  url = System.getenv("FLYWAY_DB") ?: 'jdbc:postgresql://ec2-18-224-23-118.us-east-2.compute.amazonaws.com:5434/itau'
+  user = System.getenv("FLYWAY_USER") ?: 'test'
+  password = System.getenv("FLYWAY_PASS") ?: 'e1BoUt8Jf6zt'
+}
+
+testCodeCoverageReport {
+  reports {
+    xml {
+      enabled true
+      destination file("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
+    }
+    html {
+      enabled true
+      destination file("${buildDir}/reports/jacoco/test/")
+    }
+  }
+}
+
+tasks.named("jacocoTestReport") {
+  dependsOn tasks.named("testCodeCoverageReport", JacocoReport)
+}
+
