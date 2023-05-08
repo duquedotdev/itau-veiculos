@@ -7,6 +7,7 @@
     <list default="true" id="6dd760a4-7dab-4918-a24c-acf0db465d8d" name="Changes" comment="chore: add update student usecase">
       <change afterPath="$PROJECT_DIR$/infrastructure/src/main/resources/db/migration/V1__SkillsMigration.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" afterDir="false" />
@@ -451,7 +452,7 @@
       <workItem from="1683319445118" duration="5825000" />
       <workItem from="1683389223353" duration="5358000" />
       <workItem from="1683463652292" duration="23645000" />
-      <workItem from="1683549519436" duration="27854000" />
+      <workItem from="1683549519436" duration="27941000" />
     </task>
     <task id="LOCAL-00001" summary="chore: add update student usecase">
       <created>1678104028410</created>

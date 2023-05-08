@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  IMAGE_NAME: aerodata/core
+  IMAGE_NAME: itauveiculos/itau
 
 jobs:
   # Job para a execução dos testes
