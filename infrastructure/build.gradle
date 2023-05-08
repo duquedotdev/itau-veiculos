@@ -16,7 +16,7 @@ plugins {
   id 'org.flywaydb.flyway' version '8.4.3'
 }
 
-group 'io.aerodata.core.infrastructure'
+group 'br.com.itau.infrastructure'
 
 bootJar {
   archiveName 'application.jar'
@@ -34,9 +34,6 @@ dependencies {
 
   implementation('org.springdoc:springdoc-openapi-webmvc-core:1.6.14')
   implementation('org.springdoc:springdoc-openapi-ui:1.6.14')
-  
-//  implementation('org.springframework.boot:spring-boot-starter-security:2.7.9')
-//  implementation('org.springframework.boot:spring-boot-starter-oauth2-resource-server:2.7.9')
 
   implementation('org.springframework.boot:spring-boot-starter-undertow:2.7.9')
   implementation('org.postgresql:postgresql:42.5.4')
@@ -50,12 +47,11 @@ dependencies {
   implementation('com.fasterxml.jackson.module:jackson-module-afterburner')
 
   implementation('com.h2database:h2')
-//  testImplementation('org.springframework.security:spring-security-test:6.0.2')
 
 }
 
 flyway {
-  url = System.getenv("FLYWAY_DB") ?: 'jdbc:postgresql://ec2-18-224-23-118.us-east-2.compute.amazonaws.com:5434/itau'
+  url = System.getenv("FLYWAY_DB") ?: 'jdbc:postgresql://localhost:5434/itau'
   user = System.getenv("FLYWAY_USER") ?: 'test'
   password = System.getenv("FLYWAY_PASS") ?: 'e1BoUt8Jf6zt'
 }
