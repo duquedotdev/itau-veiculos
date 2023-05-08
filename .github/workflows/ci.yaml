@@ -26,8 +26,9 @@ jobs:
           distribution: 'adopt'
       # 3. Executar pré-condições 
       - name: Run pre-conditions for gradle
+        run: sed -i -e 's/\r$//' gradlew
+      - name: Run 2 pre-conditions for gradle
         run: chmod +x ./gradlew
-#        run: sed -i -e 's/\r$//' gradlew
     # 4. Executar os testes da aplicação
       - name: Run application tests
         run: ./gradlew test
