@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/application/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/br/com/itau/application/user/retrieve/get/DefaultGetUserByIdUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/test/java/br/com/itau/user/update/UpdateUserUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/test/java/br/com/itau/user/update/UpdateUserUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
@@ -453,7 +454,7 @@
       <workItem from="1683319445118" duration="5825000" />
       <workItem from="1683389223353" duration="5358000" />
       <workItem from="1683463652292" duration="23645000" />
-      <workItem from="1683549519436" duration="29867000" />
+      <workItem from="1683549519436" duration="30184000" />
     </task>
     <task id="LOCAL-00001" summary="chore: add update student usecase">
       <created>1678104028410</created>

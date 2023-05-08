@@ -4,7 +4,7 @@ services:
   app:
     container_name: itau
     #    build: .
-    image: itauveiculos/itau:main-8
+    image: itauveiculos/itau:main-9
     profiles: [ "app" ]
     restart: unless-stopped
     env_file:

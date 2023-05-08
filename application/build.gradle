@@ -3,7 +3,7 @@ plugins {
   id 'java-library'
 }
 
-group 'io.aerodata.core.application'
+group 'br.com.itau.application'
 
 
 dependencies {
